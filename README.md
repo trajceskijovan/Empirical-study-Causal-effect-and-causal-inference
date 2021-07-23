@@ -27,10 +27,34 @@ Policy Dataset:
 - OxCGRT provides information on 20 indicators of government responses.
 - Eight of the policy indicators (C1-C8) record information on containment and closure policies, such as school closures and restrictions in movement.
 
+# Visualization of Combined Datasets
 
+# Models and Results
 
+Simple Linear Regression:
+Fatality Rate=𝛽0+𝛽1*𝑃𝑜𝑝𝑢𝑙𝑎𝑡𝑖𝑜𝑛𝐷𝑒𝑛𝑠𝑖𝑡𝑦+𝑒
+ 
+with  𝛽  the average causal effect of Population Density on Fatality Rate
 
+The null hypothesis is
+ℍ0:𝛽=𝛽0
+The alternative hypothesis is
+ℍ1:𝛽≠𝛽0
+Null hypothesis states that the true value of 𝛽 equals the hypothesized value 𝛽0. Alternative hypothesis states that the true value of 𝛽 does not equal the hypothesized value.
 
+Our main goal is to assess whether or not a coefficient 𝛽 equals a specific value 𝛽0.
+
+Simple Regression & Forward Selection:
+
+In order to alleviate omitted variables bias, we need to think about finding control variables, which may directly correlated to focal 𝑥 (Population Density) and directly influence 𝑦(Fatality Rate from COVID-19). We will discuss each of the variables separately. Here you can see a list of confounding variables:
+
+Population Density - DEN
+Population Ages 65+% - AGELevelShare
+Health Care Expenditures per Capita - HC
+Bachelors Degree Graduate Rate - EDUC
+SeverelyObese% - OBESE
+Life Expectancy at Birth - LIFE
+Infection Rate -IR
 
 
 
