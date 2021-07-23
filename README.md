@@ -1,5 +1,7 @@
 # Empirical-study-Causal-effect-and-causal-inference
+
 Topic: COVID-19 mortality rate (study completed in Python). 
+
 Narative: Original empirical study submitted for the Applied Predictive Modeling course during my second semester at HKBU - Master of Science in Data Analytics and Business Economics.
 
 # Research question and motivation
