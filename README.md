@@ -48,13 +48,13 @@ Simple Regression & Forward Selection:
 
 In order to alleviate omitted variables bias, we need to think about finding control variables, which may directly correlated to focal 𝑥 (Population Density) and directly influence 𝑦(Fatality Rate from COVID-19). We will discuss each of the variables separately. Here you can see a list of confounding variables:
 
-Population Density - DEN
-Population Ages 65+% - AGELevelShare
-Health Care Expenditures per Capita - HC
-Bachelors Degree Graduate Rate - EDUC
-SeverelyObese% - OBESE
-Life Expectancy at Birth - LIFE
-Infection Rate -IR
+ - Population Density - DEN
+ - Population Ages 65+% - AGELevelShare
+ - Health Care Expenditures per Capita - HC
+ - Bachelors Degree Graduate Rate - EDUC
+ - SeverelyObese% - OBESE
+ - Life Expectancy at Birth - LIFE
+ - Infection Rate -IR
 
 
 
