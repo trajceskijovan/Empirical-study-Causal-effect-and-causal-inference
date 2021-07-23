@@ -56,8 +56,52 @@ In order to alleviate omitted variables bias, we need to think about finding con
  - Life Expectancy at Birth - LIFE
  - Infection Rate -IR
 
-
 Multiple Regression: FatalityRate=𝛽0+𝛽1*𝐷𝐸𝑁+𝛽2*𝐴𝐺𝐸𝐿𝑒𝑣𝑒𝑙𝑆ℎ𝑎𝑟𝑒+𝛽3*𝐻𝐶+𝛽4*𝐸𝐷𝑈𝐶+𝛽5*𝑂𝐵𝐸𝑆𝐸+𝛽6*𝐿𝐼𝐹𝐸+𝛽7*𝐼𝑅+𝑒
+
+# Hypothesis Testing
+Result: We can see that in hypothesis testing for Population Density we will reject H0 in favor of H1 and conclude that beta j is significantly different from zero.
+P-value is below 0.05 so we reject Null Hypothesis and conclude that beta is significantly different from zero.
+
+# Endogeneity Handling
+We need to consider if both the dependent variable and a regressor are simultaneously determined or they can theoretically affect each other in different scenarios. If this is the case, then the variables should be treated as endogenous.
+
+Fatality Rate=𝛽0+𝛽1*𝑃𝑜𝑝𝑢𝑙𝑎𝑡𝑖𝑜𝑛𝐷𝑒𝑛𝑠𝑖𝑡𝑦+𝑒
+If COVID-19 Fatality Rate is affected by unobserved 'Wealth of the population' in a particular state, and individuals with higher wealth choose to live in bigger cities with higher Population Density, then 𝑒 contains unobserved Wealth, so Popultion Density and 𝑒 will be positively correlated.
+
+Hence Population Density is endogenous.
+
+In order to identify the unknown  𝜷  in structual model, we need the help of IVs to converse the structual model into two linear projection models.
+
+In order to handle endogeneity, we need to find instruments, which are determined outside the system for  (𝑦𝑖,𝒙2𝑖) , causally determine  𝒙2𝑖 , but do not causally determine  𝑦𝑖  except through  𝒙2𝑖 .
+
+Presents of IV can be used to estimate consistently the parameters in equation.
+
+The reason for choosing 2SLS over OLS is that we think OLS estimators beta0 and beta1 are inconsistent due to correlation between x and u.
+
+IV must be: 
+1) Uncorrelated with other unobserved factors affecting FatalityRate
+2) It should not have direct affect on FatalityRate
+3) It must be correlated with Population Density
+
+Null Hypothesis: 𝐇0:𝛿1=0
+Failing to reject 𝐇0:𝛿1=0 indicates that no obvious evidence for endogeneity of 𝑦2
+We reject the null hypothesis that DEN is exogenous and conclude that DEN is indeed an endogenous variable.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
