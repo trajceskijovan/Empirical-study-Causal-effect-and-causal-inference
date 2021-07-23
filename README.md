@@ -4,7 +4,7 @@
 
 **Narative:** This is an original empirical study I have prepared and submitted for the Applied Predictive Modeling course during my second semester at HKBU - Master of Science in Data Analytics and Business Economics.
 
-# Code:
+# Code and Empirical Study (Jupiter Notebook):
 https://github.com/trajceskijovan/Empirical-study-Causal-effect-and-causal-inference/blob/main/COVID-19%20mortality%20rate.ipynb
 
 # Research question and motivation
