@@ -56,7 +56,9 @@ In order to alleviate omitted variables bias, we need to think about finding con
  - Life Expectancy at Birth - LIFE
  - Infection Rate -IR
 
+Multiple Regression:
 
+FatalityRate=𝛽0+𝛽1*𝐷𝐸𝑁+𝛽2*𝐴𝐺𝐸𝐿𝑒𝑣𝑒𝑙𝑆ℎ𝑎𝑟𝑒+𝛽3*𝐻𝐶+𝛽4*𝐸𝐷𝑈𝐶+𝛽5*𝑂𝐵𝐸𝑆𝐸+𝛽6*𝐿𝐼𝐹𝐸+𝛽7*𝐼𝑅+𝑒
 
 
 
