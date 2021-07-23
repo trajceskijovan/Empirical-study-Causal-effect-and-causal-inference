@@ -146,9 +146,16 @@ We conclude that the population density has a significant effect on Fatality Rat
 
 One of the limitations is that our dataset has a lot of variables but limited rows due to number of US States.
 
+# Conclusion and Limitations
+This project estimates and analyzes the causal effect of Population Density on the COVID-19 mortality rate. COVID-19 has been more fatal than many recent epidemics, which makes its death toll relevant to understanding the pandemic more broadly and help to better prepare for future pandemics.
 
+Understanding the reasons behind Fatality Rate being high in some of the areas and not others will help Government to come up with measurements to mitigate the pressure on the Health Care system during pandemic outbreak and potentially save lives of millions.
 
+The estimated results suggest that the population density has a statistically significant positive effect on the COVID-19 mortality rate.
 
+IV Limitations: In a small sample, the IV estimator can have a substantial bias. According to the law of large numbers, IV estimator is consistent for b1:plim(b1^)=b1, provided assumptions are satisfied. If either assumptions fails, the IV estimators are not consistent. One feature of the IV estimator is that, when x and u in fact correlated so that IV Estimation is actually needed - it is essentially never unbiased. IV estimator has an approximate normal distribution in large sample size.
+
+There are considerable limitations to any study employing data aggregated to the state level. Ours is no exception. Such data will likely not capture factors relevant to our research question that more refined data would reveal. Despite these limitations, we hope that this study will serve as the basis for future research in this area.
 
 
 
