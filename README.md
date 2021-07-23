@@ -5,7 +5,7 @@
 **Narative:** Original empirical study submitted for the Applied Predictive Modeling course during my second semester at HKBU - Master of Science in Data Analytics and Business Economics.
 
 # Code:
-https://github.com/trajceskijovan/Empirical-study-Causal-effect-and-causal-inference/blob/main/COVID19%20mortality%20rate.ipynb
+https://github.com/trajceskijovan/Empirical-study-Causal-effect-and-causal-inference/blob/main/COVID-19%20mortality%20rate.ipynb
 
 # Research question and motivation
 The purpose of this project is to identify the factors correlated with the COVID-19 mortality rate. We hope to increase the level of understanding concerning factors that render some states more vulnerable to the virus than others. As coronavirus continues its spread across the globe, even modest, but early advances in such knowledge could lead to a significant reduction in loss of life.
