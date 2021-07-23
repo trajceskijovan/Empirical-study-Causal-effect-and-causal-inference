@@ -87,16 +87,64 @@ Null Hypothesis: 𝐇0:𝛿1=0
 Failing to reject 𝐇0:𝛿1=0 indicates that no obvious evidence for endogeneity of 𝑦2
 We reject the null hypothesis that DEN is exogenous and conclude that DEN is indeed an endogenous variable.
 
+# IV Selection
+An ideal instrumental variable affects the regressor (Population Density) but does not directly influence the dependent variable (Covid-19 Fatality Rate) except through the indirect effect on the regressor.
 
+Median Income Annual and Gini Index are potential IV choices:
 
+If a state has High Annual Median Income, it indicates that Population Density will be higher in that state as more people will migrate to the state trying to find a job.
 
+However, Median Income Annual does not directly affect if a person gets infected by Covid-19 and dies from it, so should not have a direct effect on Covid-19 Fatality Rate
 
+Gini Index - is a measure of statistical dispersion intended to represent the income inequality or wealth inequality within a nation or any other group of people.
 
+To get the consistent estimator for  𝜷 , we introduce Two-Stage Least Squares.
 
+We completed 2SLS using two different OLSs as well as utilizing a package -IV2SLS. Both of the approaches provided us with similar results for beta for log Density, beta=1.0791. However, there is a difference in Standard Error. Standard Error of automatic 2SLS is 0.2121 and Standard Error using two separate OLS is 0.1495. Standard Error using two OLS is misleading as the computer treats each of the OLSs, 1st and 2nd OLS, separately. Therefore, we choose to use automatic 2SLS approach using the package IV2SLS.
 
+Solution for beta using OLS is smaller than it is in 2SLS. It appears that OLS underestimates true effect of beta.
 
+# Sargant Test
+We need to test the assumption that IVs are not correlated with the error term in the equation of interest. If IVs are endogenous than we need to find different IVs. Since we have overidentifying restrictions, we are going to perform the Sargan–Hansen test.
 
+The test of overidentifying restrictions regresses the residuals from an 2SLS regression on all instruments and exogenous variables. It is based on the observation that the residuals should be uncorrelated with the set of exogenous variables if the instruments are truly exogenous.
 
+Null Hypothesis: All IVs are exogenous (IVs are uncorrelated to Error Term)
+Alternative Hypothesis: IVs are correlated to Error Term.
+
+Result: P-Value is above 0.05, therefore, we cannot reject Null Hypothesis and may conclude that IVs are not correlated to Error. It supports the validity of IVs we found.
+
+# Testing for Endogeneity
+Next, we can use Hausman-Wu test to test for Endogeneity.
+
+The 2SLS estimator is less efficient than OLS estimator when the explanatory variables are exogenous
+
+Therefore, if no endogeneity problem occurs, then we prefer OLS estimator.
+
+Suppose the structural model:
+𝑦1=𝛽0+𝛽1𝑦2+𝛽2𝑧1+𝛽3𝑧2+𝑢1
+where 𝑦2(Population Density) is suspected endogenous
+
+We also have available IVs 𝑧3 (Gini Index) and 𝑧4(Income) excluded from the above model. In terms of the first stage linear prediction model of
+𝑦2=𝜋0+𝜋1𝑧1+𝜋2𝑧2+𝜋3𝑧3+𝜋4𝑧4+𝑣2
+we know that 𝑦2 (Population Density) is not endogenous if and only if 𝑣2 is uncorrelated to 𝑢1 in the structural model. Idealy speaking, we can just test the statistical significance of 𝛿1 in the simple projection model:
+𝑢1=𝛿1𝑣2+𝑒1
+In practice, we will collect the first stage linear prediction model residuals and conduct the following auxiliary regression:
+𝑦1=𝛽0+𝛽1𝑦2+𝛽2𝑧1+𝛽3𝑧2+𝛿1𝑣̂ 2+ error 
+
+𝐇0:𝛿1=0
+Failing to reject 𝐇0:𝛿1=0 indicates that no obvious evidence for endogeneity of Population Density (y2)*
+
+We can reject Null Hypothesis and conclude that we have evidence for endogeneity of Population Density, therefore, we need to continue our research to find more IVs.
+
+Because of this result, we will explore other variables as IVs for 2SLS. We add Unemployment and Urbanization as IVs. Both of those variables affects the regressor (Population Density) but do not directly influence the dependent variable (Covid-19 Fatality Rate) except through the indirect effect on the regressor.
+
+# Additional IVs
+We fail to reject Null Hypothesis at 1% and 5% when we change the IVs. We conclude that there are no evidence for endogeneity of Population Density when we use IVs such as Unemployment and Urbanization.
+
+We conclude that the population density has a significant effect on Fatality Rate and by using the following variables such as AGELevelShare, HC , EDUC, OBESE, LIFE, IR and IVs being Urban and Unemployment rates, the focal X remains stable.
+
+One of the limitations is that our dataset has a lot of variables but limited rows due to number of US States.
 
 
 
