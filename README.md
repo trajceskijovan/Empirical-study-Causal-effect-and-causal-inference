@@ -164,6 +164,6 @@ IV Limitations: In a small sample, the IV estimator can have a substantial bias.
 There are considerable limitations to any study employing data aggregated to the state level. Ours is no exception. Such data will likely not capture factors relevant to our research question that more refined data would reveal. Despite these limitations, we hope that this study will serve as the basis for future research in this area.
 
 
-
-
+---
+This code is free to use for academic purposes only, provided that a proper reference is cited. This code comes without technical support of any kind. Under no circumstances will the author be held responsible for any use of this code in any way.
 
