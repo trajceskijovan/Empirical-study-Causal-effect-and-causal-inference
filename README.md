@@ -24,9 +24,9 @@ Population Density (Social Variable) - the increased population density increase
 
 # Description of Datasets
 COVID 19 Dataset:
-- We collected 47 variables covering two data types: medical and demographic.
+- Collected 47 variables covering two data types: medical and demographic.
 - The COVID 19 dataset was collected from different sources: CDC, Agency for Healthcare, Bureau of Health, Labor Statistics, Department of Labour, US Census Bureau, Kaiser Family Foundation, Johns Hopkins University, Wikipedia, YouGov, NBC News.
-- The data for collected on a state level (51 states)
+- The data is on a state level (51 states)
 
 Policy Dataset:
 - Dataset was collected from The Oxford COVID-19 Government Response Tracker (OxCGRT) website.
