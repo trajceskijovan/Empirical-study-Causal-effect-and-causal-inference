@@ -19,15 +19,15 @@ Population density has an impact on the spread of the pandemic. Population densi
 We chose mortality rate as our target variable as it is less likely than case rates (e.g., infection rate) to be distorted by local variations in testing policy.
  
 # Target and Focal Variables
-Fatality Rate - Dependent Variable
+Fatality Rate- Dependent Variable.
 
-Population Density (Social Variable) - the increased population density increases exposure to all communicable pathogens as it is getting more difficult for people to keep social distance. On the other side, people living in rural areas are more likely to maintain some sort of social distance. Therefore, people living in areas with high population density are more likely to be infected with a heavy viral load which could increase the severity of COVID-19 and lead to death. We expect the coefficient of this variable to be positive.
+Population Density (Social Variable) - the increased population density increases exposure to all communicable pathogens as it is getting more difficult for people to keep social distance. On the other side, people living in rural areas are more likely to maintain social distance. Therefore, people living in areas with high population density are more likely to be infected with a heavy viral load which could increase the severity of COVID-19 and leads to death. We expect the coefficient of this variable to be positive.
 
 # Description of Datasets
 COVID 19 Dataset:
 - Collected 47 variables covering two data types: medical and demographic.
 - The COVID 19 dataset was collected from different sources: CDC, Agency for Healthcare, Bureau of Health, Labor Statistics, Department of Labour, US Census Bureau, Kaiser Family Foundation, Johns Hopkins University, Wikipedia, YouGov, NBC News.
-- The data is on a state level (51 states)
+- The data is on a state level
 
 Policy Dataset:
 - Dataset was collected from The Oxford COVID-19 Government Response Tracker (OxCGRT) website.
@@ -35,6 +35,19 @@ Policy Dataset:
 - Eight of the policy indicators (C1-C8) record information on containment and closure policies, such as school closures and restrictions in movement.
 
 # Visualization of Combined Datasets
+
+Samples of Positive Correlation are:
+
+'No Doctor for the last 12 months and 'Uninsured Population'
+'Median Income' and 'Life Expectancy at birth'
+'Unemployment Claim' and 'Health Care Expenditure'
+
+Samples of Negative Correlation are:
+
+'Infection Rate' and 'Stringency Index'
+'Severe Obesity' and 'Life Expectancy at Birth'
+'Health Care Expenditure per capita' and 'Uninsured total population rate'
+
 
 # Models and Results
 
