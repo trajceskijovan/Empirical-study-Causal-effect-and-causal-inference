@@ -2,7 +2,7 @@
 
 **Topic:** COVID-19 mortality rate (study completed in Python). 
 
-**Narative:** This is an original empirical study I have prepared and submitted for the Applied Predictive Modeling course during my second semester at HKBU - Master of Science in Data Analytics and Business Economics.
+**Narative:** This is an original empirical study submitted for the Applied Predictive Modeling course during my second semester at HKBU - Master of Science in Data Analytics and Business Economics.
 
 # Code, full research paper & empirical study (Jupiter Notebook):
 https://github.com/trajceskijovan/Empirical-study-Causal-effect-and-causal-inference/blob/main/COVID-19%20mortality%20rate.ipynb
