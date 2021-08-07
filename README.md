@@ -4,18 +4,19 @@
 
 **Narative:** This is an original empirical study submitted for the Applied Predictive Modeling course during my second semester at HKBU - Master of Science in Data Analytics and Business Economics.
 
-# Code, full research paper & empirical study (Jupiter Notebook):
+# Code + research paper (Jupiter Notebook):
 https://github.com/trajceskijovan/Empirical-study-Causal-effect-and-causal-inference/blob/main/COVID-19%20mortality%20rate.ipynb
 
 # Research question and motivation
-The purpose of this project is to identify the factors correlated with the COVID-19 mortality rate. We hope to increase the level of understanding concerning factors that render some states more vulnerable to the virus than others. As coronavirus continues its spread across the globe, even modest, but early advances in such knowledge could lead to a significant reduction in loss of life.
+The purpose of this project is to identify the factors correlated with the COVID-19 mortality rate. We hope to increase understanding concerning factors that render some states more vulnerable to the virus than others. As coronavirus continues its spread across the globe, even modest but early advances in such knowledge could lead to a significant reduction in loss of life.
 
-The infection fatality rate, the probability of dying for a person who is infected, is one of the most important features of the coronavirus disease 2019 (COVID-19) pandemic. The expected total mortality burden of COVID-19 is directly related to the infection fatality rate. Moreover, justification for various non-pharmacological public health interventions depends on the infection fatality rate. Some stringent interventions that potentially also result in more noticeable collateral harms may be considered appropriate, if the infection fatality rate is high. Conversely, the same measures may fall short of acceptable risk–benefit thresholds, if the infection fatality rate is low .2 
-We will examine Population Density and its effect on target variable - Fatality Rate.
+The infection fatality rate, the probability of dying for an infected person, is one of the essential features of the coronavirus disease 2019 (COVID-19) pandemic. The expected total mortality burden of COVID-19 is directly related to the infection fatality rate. Moreover, justification for various non-pharmacological public health interventions depends on the infection fatality rate. If the infection fatality rate is high, some stringent interventions that potentially also result in more noticeable collateral harms may be considered appropriate. Conversely, the same measures may fall short of acceptable risk-benefit thresholds, if the infection fatality rate is low.
 
-Population density has a marked impact on spread of the pandemic. Population density can be defined as a measurement of the average number of individuals per unit of geographic area (Liu et al. 2020) The higher the population density, the faster diseases can spread. Population density is likely just one of many key factors that determine the vulnerability of a specific location to the virus. In smaller communities, the virus has targeted nursing homes, community houses, funeral parlors, and of course cruise ships, which are like dense small cities at sea.
+We will examine Population Density and its effect on the target variable - Fatality Rate.
 
-We chose mortality rate as our target variable as it is less likely than case rates (e.g. infection rate) to be distorted by local variations in testing policy.
+Population density has an impact on the spread of the pandemic. Population density can be defined as a measurement of the average number of individuals per unit of geographic area (Liu et al. 2020)$.^{3}$ The higher the population density, the faster diseases can spread. Population density is likely just one of many key factors determining a specific location's vulnerability to the virus. In smaller communities, the virus has targeted nursing homes, community houses, funeral parlors, and of course, cruise ships, which are like dense small cities at sea.
+
+We chose mortality rate as our target variable as it is less likely than case rates (e.g., infection rate) to be distorted by local variations in testing policy.
  
 # Target and Focal Variables
 Fatality Rate - Dependent Variable
