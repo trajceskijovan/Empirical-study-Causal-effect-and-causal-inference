@@ -14,7 +14,7 @@ The infection fatality rate, the probability of dying for an infected person, is
 
 We will examine Population Density and its effect on the target variable - Fatality Rate.
 
-Population density has an impact on the spread of the pandemic. Population density can be defined as a measurement of the average number of individuals per unit of geographic area (Liu et al. 2020)$.^{3}$ The higher the population density, the faster diseases can spread. Population density is likely just one of many key factors determining a specific location's vulnerability to the virus. In smaller communities, the virus has targeted nursing homes, community houses, funeral parlors, and of course, cruise ships, which are like dense small cities at sea.
+Population density has an impact on the spread of the pandemic. Population density can be defined as a measurement of the average number of individuals per unit of geographic area (Liu et al. 2020). The higher the population density, the faster diseases can spread. Population density is likely just one of many key factors determining a specific location's vulnerability to the virus. In smaller communities, the virus has targeted nursing homes, community houses, funeral parlors, and of course, cruise ships, which are like dense small cities at sea.
 
 We chose mortality rate as our target variable as it is less likely than case rates (e.g., infection rate) to be distorted by local variations in testing policy.
  
