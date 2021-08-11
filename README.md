@@ -39,13 +39,17 @@ Policy Dataset:
 Samples of Positive Correlation are:
 
 'No Doctor for the last 12 months and 'Uninsured Population'
+
 'Median Income' and 'Life Expectancy at birth'
+
 'Unemployment Claim' and 'Health Care Expenditure'
 
 Samples of Negative Correlation are:
 
 'Infection Rate' and 'Stringency Index'
+
 'Severe Obesity' and 'Life Expectancy at Birth'
+
 'Health Care Expenditure per capita' and 'Uninsured total population rate'
 
 
